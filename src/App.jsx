@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import ScrollProgress from "./components/ScrollProgress";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -10,6 +11,7 @@ import BackToTop from "./components/BackToTop";
 function App() {
   return (
     <>
+      <ScrollProgress />
       <Header />
       <main>
         <Hero />

@@ -1,6 +1,7 @@
 import navigation from "../data/navigation";
 import socialLinks from "../data/socialLinks";
 import personal from "../data/personal";
+import Reveal from "./Reveal";
 
 const ORB_CLASSES = ["f1", "f2", "f3", "f4", "f5"];
 
@@ -8,7 +9,8 @@ function Footer() {
   return (
     <footer id="footer" className="footer">
       <div className="container">
-        <div className="footer-card position-relative overflow-hidden">
+        <Reveal direction="zoom">
+          <div className="footer-card position-relative overflow-hidden">
           <div className="row g-4">
             <div className="col-lg-5">
               <h3 className="footer-heading">
@@ -46,7 +48,8 @@ function Footer() {
           {ORB_CLASSES.map((orb) => (
             <span key={orb} className={`orb ${orb}`}></span>
           ))}
-        </div>
+          </div>
+        </Reveal>
         <div className="copyright">{personal.footer.copyright}</div>
       </div>
     </footer>

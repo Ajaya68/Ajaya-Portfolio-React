@@ -14,12 +14,15 @@ A modern, dark-themed personal portfolio built with **React + Vite**. This is a 
 
 - Fixed pill navigation with scroll-spy (active section highlight)
 - Sticky nav that gains a blurred background on scroll
+- Smooth scroll-reveal animations (IntersectionObserver-based, staggered)
+- Hero section load-in animation and scroll progress bar
 - Hero section with availability badge, stats, profile image & CV download
 - Skills grid, project cards & certification cards — all rendered from data files
 - Contact form wired to [Web3Forms](https://web3forms.com)
 - Animated floating orbs in the footer
 - Back-to-top button
 - Fully responsive (mobile / tablet / desktop)
+- `prefers-reduced-motion` support (animations disabled for accessibility)
 
 ## Getting Started
 
@@ -69,7 +72,9 @@ npm run preview
     │   ├── CertificationCard.jsx
     │   ├── Contact.jsx
     │   ├── Footer.jsx
-    │   └── BackToTop.jsx
+    │   ├── BackToTop.jsx
+    │   ├── ScrollProgress.jsx
+    │   └── Reveal.jsx       # scroll-reveal wrapper (IntersectionObserver)
     └── styles/
         └── portfolio.css       # global styles (dark theme)
 ```
