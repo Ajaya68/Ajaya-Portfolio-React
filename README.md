@@ -1,6 +1,7 @@
 # Ajaya Mahanty — Portfolio (React)
 
-A modern, dark-themed personal portfolio built with **React + Vite**. This is a full migration of the original vanilla HTML/CSS/JS portfolio into a component-based React application.
+A modern, dark-themed personal portfolio built with **React + Vite**. This is a full migration of the original vanilla HTML/CSS/JS portfolio into a component-based React application. </br>
+Live Link 👉  https://ajayafullstackdev.netlify.app/
 
 ##Live Link >> https://ajayafullstackdev.netlify.app/
 ## Tech Stack
@@ -84,14 +85,14 @@ npm run preview
 
 All content is data-driven. To update your site, edit the files in `src/data/` — no component code changes needed:
 
-| What | File |
-| --- | --- |
-| Name, tagline, stats, resume | `src/data/personal.js` |
-| Nav links | `src/data/navigation.js` |
-| Skills / tools | `src/data/skills.js` |
-| Projects | `src/data/projects.js` |
-| Certificates | `src/data/certification.js` |
-| Social links | `src/data/socialLinks.js` |
+| What                         | File                        |
+| ---------------------------- | --------------------------- |
+| Name, tagline, stats, resume | `src/data/personal.js`      |
+| Nav links                    | `src/data/navigation.js`    |
+| Skills / tools               | `src/data/skills.js`        |
+| Projects                     | `src/data/projects.js`      |
+| Certificates                 | `src/data/certification.js` |
+| Social links                 | `src/data/socialLinks.js`   |
 
 The contact form uses a Web3Forms access key in `src/components/Contact.jsx`.
 
