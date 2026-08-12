@@ -10,7 +10,7 @@ const certifications = [
   },
   {
     id: 2,
-    title: "SQL (Intermediate)",
+    title: "Software Engineer Intern",
     issuer: "HackerRank",
     date: "Completed",
     image:
@@ -33,7 +33,7 @@ const certifications = [
     date: "Ongoing",
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
-    credentialUrl: "#",
+    credentialUrl: "https://www.hackerrank.com/certificates/0365db9a2ec2",
   },
 ];
 

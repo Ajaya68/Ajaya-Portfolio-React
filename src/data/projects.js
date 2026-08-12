@@ -7,7 +7,7 @@ const projects = [
     tags: ["Oracle SQL", "PL/SQL"],
     description:
       "Designed and developed an enterprise-level payroll database system using Oracle SQL and PL/SQL. Created a normalized database schema with 10+ relational tables for employee, department, attendance, leave, tax, bonus, and payroll management.",
-    link: "https://github.com/Ajaya68/employee-payroll-system-oracle.git",
+    link: "https://github.com/Ajaya68/employee-payroll-system",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     tags: ["Oracle SQL", "PL/SQL"],
     description:
       "Designed and implemented a normalized banking database schema for customers, accounts, transactions, branches, and loans using Oracle SQL. Developed stored procedures for deposit processing, account updates, and transaction report generation.",
-    link: "https://github.com/Ajaya68/banking-transaction-reporting-system-oracle.git",
+    link: "https://github.com/Ajaya68/banking-transaction-reporting-system-oracle",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const projects = [
     tags: ["HTML", "CSS", "Bootstrap", "JS"],
     description:
       "Personal developer portfolio with smooth scroll navigation, modern dark UI, and animated micro-interactions.",
-    link: "https://ajaya68.github.io/Ajaya-Portfolio/",
+    link: "https://ajaya68.github.io/ajaya-portfolio-website/",
   },
 ];
 

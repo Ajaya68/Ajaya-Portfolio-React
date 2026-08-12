@@ -1,11 +1,11 @@
 const skills = [
   {
-    name: "Core Java",
+    name: "Java SE",
     role: "Language",
     color: "#F89820",
   },
   {
-    name: "Advanced Java",
+    name: "Java EE",
     role: "Enterprise & Frameworks",
     color: "#FF9900",
   },

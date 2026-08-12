@@ -17,7 +17,7 @@ const personal = {
   location: "Hyderabad, India",
 
   description:
-    "Passionate Full Stack Java Developer skilled in Core Java, HTML, CSS, Bootstrap, JavaScript, Oracle SQL and PL/SQL. Experienced in building scalable apps, REST APIs and clean UI/UX.",
+    "Passionate Full Stack Java Developer skilled in Java SE, Java EE, HTML, CSS, Bootstrap, JavaScript, React, Oracle SQL and PL/SQL. Experienced in building scalable apps, REST APIs and clean UI/UX.",
 
   stats: [
     {
