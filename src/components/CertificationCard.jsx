@@ -3,7 +3,7 @@ function CertificationCard({ certification }) {
     .filter(Boolean)
     .join(" | ");
   return (
-    <div className="card-item">         jiiiiikkk
+    <div className="card-item">         
       <div className="card-media">
         <img
           src={certification.image}
