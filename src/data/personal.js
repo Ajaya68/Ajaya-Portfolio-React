@@ -17,16 +17,16 @@ const personal = {
   location: "Hyderabad, India",
 
   description:
-    "Passionate Full Stack Java Developer skilled in Java SE, Java EE, HTML, CSS, Bootstrap, JavaScript, React, Oracle SQL and PL/SQL. Experienced in building scalable apps, REST APIs and clean UI/UX.",
+    "Full Stack Java Developer skilled in Java SE/EE, Spring Boot, REST API development, React, JavaScript, HTML, CSS, Bootstrap, Oracle SQL and PL/SQL. Experienced in designing and developing business applications, implementing secure APIs, managing relational databases and building responsive web interfaces.",
 
   stats: [
     {
-      value: 5,
+      value: 6,
       suffix: "+",
       label: "Projects done",
     },
     {
-      value: 2,
+      value: 3,
       suffix: "+",
       label: "Years of learning",
     },

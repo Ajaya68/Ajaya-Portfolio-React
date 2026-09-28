@@ -1,43 +1,88 @@
 const skills = [
   {
-    name: "Java SE",
-    role: "Language",
+    name: "Java",
+    role: "Backend Development",
     color: "#F89820",
   },
   {
-    name: "Java EE",
-    role: "Enterprise & Frameworks",
-    color: "#FF9900",
+    name: "Spring Boot",
+    role: "REST API Development",
+    color: "#6DB33F",
   },
   {
-    name: "Oracle SQL, PL/SQL",
+    name: "Spring Data JPA",
+    role: "Data Access",
+    color: "#59666C",
+  },
+  {
+    name: "Spring Security",
+    role: "Authentication & Authorization",
+    color: "#6DB33F",
+  },
+  {
+    name: "REST APIs",
+    role: "Backend Services",
+    color: "#02569B",
+  },
+  {
+    name: "Oracle SQL",
     role: "Database",
     color: "#F80000",
   },
   {
-    name: "HTML",
-    role: "FrontEnd Structure",
+    name: "PL/SQL",
+    role: "Database Programming",
+    color: "#F80000",
+  },
+  {
+    name: "React",
+    role: "Frontend Development",
+    color: "#61DAFB",
+  },
+  {
+    name: "JavaScript",
+    role: "Web Development",
+    color: "#F7DF1E",
+  },
+  {
+    name: "HTML5",
+    role: "Frontend Structure",
     color: "#E34F26",
   },
   {
-    name: "CSS",
-    role: "FrontEnd Design",
+    name: "CSS3",
+    role: "Frontend Styling",
     color: "#1572B6",
   },
   {
     name: "Bootstrap",
-    role: "CSS Framework",
+    role: "UI Framework",
     color: "#7952B3",
   },
   {
-    name: "JavaScript",
-    role: "Interactions",
-    color: "#F7DF1E",
+    name: "Git & GitHub",
+    role: "Version Control",
+    color: "#181717",
   },
   {
-    name: "React.js",
-    role: "Frontend Framework",
-    color: "#61DAFB",
+    name: "Maven",
+    role: "Build & Dependency Management",
+    color: "#C71A36",
+  },
+  {
+    name: "JWT",
+    role: "Authentication",
+    color: "#000000",
+  },
+  {
+    name: "Jenkins",
+    role: "Continuous Integration",
+    color: "#D24939",
+  },
+  {
+    name: "Docker",
+    role: "Containerization",
+    color: "#2496ED",
   },
 ];
 

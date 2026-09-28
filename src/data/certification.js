@@ -30,7 +30,7 @@ const certifications = [
     id: 4,
     title: "React",
     issuer: "HackerRank",
-    date: "Ongoing",
+    date: "Completed",
     image:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
     credentialUrl: "https://www.hackerrank.com/certificates/0365db9a2ec2",
