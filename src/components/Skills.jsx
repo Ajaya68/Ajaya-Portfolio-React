@@ -1,5 +1,8 @@
+import { useState } from "react";
 import skills from "../data/skills";
 import Reveal from "./Reveal";
+
+const INITIAL_COUNT = 6;
 
 function SkillItem({ skill, index }) {
   const { name, role, color } = skill;
@@ -25,15 +28,22 @@ function SkillItem({ skill, index }) {
 }
 
 function Skills() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleSkills = showAll ? skills : skills.slice(0, INITIAL_COUNT);
+  const remaining = skills.length - INITIAL_COUNT;
+
+  const handleToggle = (e) => {
+    e.preventDefault();
+    setShowAll((v) => !v);
+  };
+
   return (
-    <section className="tools">
+    <section id="tools" className="tools">
       <div className="container">
-        <div className="row g-5 align-items-start">
-          <div className="col-lg-5">
+        <div className="tools-single-col">
+          <div className="tools-header">
             <Reveal direction="left">
-              <h2 className="section-title">
-                Essential Tools <br />I use
-              </h2>
+              <h2 className="section-title">Essential Tools I Use</h2>
             </Reveal>
             <Reveal delay={120} direction="left">
               <p className="section-sub">
@@ -43,13 +53,27 @@ function Skills() {
               </p>
             </Reveal>
           </div>
-          <div className="col-lg-7">
-            <div className="tools-grid">
-              {skills.map((skill, index) => (
-                <SkillItem key={skill.name} skill={skill} index={index} />
-              ))}
-            </div>
+          <div className="tools-grid" id="tools-grid">
+            {visibleSkills.map((skill, index) => (
+              <SkillItem key={skill.name} skill={skill} index={index} />
+            ))}
           </div>
+          {skills.length > INITIAL_COUNT && (
+            <div className="tools-more-wrap">
+              <a
+                href="#tools-grid"
+                className="tools-more-link"
+                onClick={handleToggle}
+                role="button"
+                aria-expanded={showAll}
+              >
+                {showAll ? "See less" : `See more (${remaining} more)`}
+                <i
+                  className={`bi ${showAll ? "bi-chevron-up" : "bi-chevron-down"}`}
+                ></i>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </section>

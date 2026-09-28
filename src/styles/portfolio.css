@@ -462,11 +462,58 @@ section.contact {
   max-width: 380px;
 }
 
-/* TOOLS */
-.tools-grid {
+/* TOOLS — centered header + multi row/column grid */
+.tools-single-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tools-header {
+  text-align: center;
+}
+
+.tools-header .section-sub {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+}
+
+.tools-grid,
+.tools-grid-single {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+.tools-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.tools-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--cyan-2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tools-more-link:hover {
+  color: var(--cyan-3);
+  text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+  .tools-grid,
+  .tools-grid-single {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .tool {
@@ -499,21 +546,39 @@ section.contact {
   font-size: 0.9rem;
   font-weight: 500;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .tool .role {
   font-size: 0.75rem;
   color: var(--muted);
   margin-top: 2px;
+  text-transform: capitalize;
 }
 
-/* CARDS (projects/certs) */
+/* CARDS (projects/certs) — equal height */
+.projects .row > [class*="col-"] {
+  display: flex;
+}
+
+.project-reveal,
+.projects .reveal,
+.projects .reveal-visible {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
 .card-item {
   background: var(--bg-2);
   border: 1px solid var(--line);
   border-radius: 18px;
   overflow: hidden;
   height: 100%;
+  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   transition: transform 160ms ease, border-color 160ms ease;
@@ -562,6 +627,11 @@ section.contact {
   color: #fff;
   line-height: 1.3;
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em; /* keeps desc aligned across cards */
 }
 
 .card-meta {
@@ -575,6 +645,36 @@ section.contact {
   color: var(--muted);
   line-height: 1.6;
   margin: 0;
+  min-height: 4.2em; /* reserves ~3 lines so cards align */
+}
+
+.card-desc.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-desc.expanded {
+  display: block;
+}
+
+.see-more-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  align-self: flex-start;
+  color: var(--cyan-2);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.see-more-btn:hover {
+  color: var(--cyan-3);
+  text-decoration: underline;
 }
 
 .card-tags {

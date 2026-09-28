@@ -11,12 +11,13 @@ function Projects() {
             <h2 className="section-title m-0">My portfolio highlights</h2>
           </div>
         </Reveal>
-        <div className="row g-4">
+        <div className="row g-4 align-items-stretch">
           {projects.map((project, index) => (
-            <div key={project.id} className="col-md-6 col-lg-4">
+            <div key={project.id} className="col-md-6 col-lg-4 d-flex">
               <Reveal
                 delay={index * 90}
                 direction={index % 2 === 0 ? "left" : "right"}
+                className="project-reveal"
               >
                 <ProjectCard project={project} />
               </Reveal>
